@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../static/css/style.css">
-    <script src="/app/static/js/script.js" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
 </head>
 <body>
   
@@ -30,7 +30,6 @@
         <input class="textInput" type="text" name="text" placeholder="Տրված հարցեր">
         <button class="send__btn" type="submit">Ուղարկել</button>
     </form>
-
     <div class="header__div">
         <p>{{ daily_word[0].book }}<span><br>
             {{ daily_word[0].chapter }}
@@ -41,7 +40,7 @@
 <main>
     <div class="wordDay">
         <p><span></span>
->>>>>>> f0d58ed481678221adb4dcf5d68449b442ef8eb5
+
         </p>
     </div>
 
@@ -49,12 +48,11 @@
         <div class="sliderLeft"></div>
         <div class="sliderRight"></div>
         <div class="slider__div">
-<img class="slider__img" src="/img/img1.jpg" alt="img1">
-<img class="slider__img" src="/img/img2.jpg" alt="img2">
-<img class="slider__img" src="/img/img3.jpg" alt="img3">
+<img class="slider__img" src="{{ url_for('static', filename='img/img1.jpg') }}" alt="img1">
+<img class="slider__img" src="{{ url_for('static', filename='img/img2.jpg') }}" alt="img2">
+<img class="slider__img" src="{{ url_for('static', filename='img/img3.jpg') }}" alt="img3">
 </div>
     </div>
-
 </main>
 </body>
 </html>
