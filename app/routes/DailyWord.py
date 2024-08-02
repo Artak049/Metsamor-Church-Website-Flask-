@@ -12,7 +12,6 @@ def show_daily_word():
     except:
         return redirect('/admin/create')
 
-
 @daily_word.route('/admin/create', methods=['GET', 'POST'])
 def daily_word_admin():
     if request.method == 'POST':

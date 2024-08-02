@@ -1,58 +1,113 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
-    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
-</head>
-<body>
-  
+    <link rel="stylesheet" href="/app/static/css/style.css">
+    <!-- <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css')}}"
+    /> -->
+    <script
+      src="{{ url_for('static', filename='js/script.js') }}"
+      defer
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__title">
+        <img
+          class="churchImg"
+          src="https://yt3.googleusercontent.com/ytc/AIdro_n7nWhPVFB6h7pPd9sbSP65HR79ruSTcZv-XooT2mI--Gc=s160-c-k-c0x00ffffff-no-rj"
+          alt="Metsamor Img"
+        />
+        <h1>Մեծամորի Եկեղեցի</h1>
+      </div>
 
-<nav>
-<div class="nav__title">
-        <img class="churchImg" src="https://yt3.googleusercontent.com/ytc/AIdro_n7nWhPVFB6h7pPd9sbSP65HR79ruSTcZv-XooT2mI--Gc=s160-c-k-c0x00ffffff-no-rj" alt="Metsamor Img">
-        <h1>Մեծամորի Եկեղացի</h1>
-</div>
-
-
-    <ul class="nav__ul">
+      <ul class="nav__ul">
         <li class="nav__li"><a class="nav__a" href="">Մեր մասին</a></li>
         <li class="nav__li"><a class="nav__a" href="">Հոգևոր ֆիլմեր</a></li>
         <li class="nav__li"><a class="nav__a" href="">Հոգևոր երգեր</a></li>
         <li class="nav__li"><a class="nav__a" href="">Աստվածաշունչ</a></li>
-    </ul>
-</nav>
-<header>
-
-    <form class="header__form" action="">
-        <input class="textInput" type="text" name="text" placeholder="Տրված հարցեր">
+      </ul>
+    </nav>
+    <header>
+      <form class="header__form" action="">
+        <input
+          class="textInput"
+          type="text"
+          name="text"
+          placeholder="Տրված հարցեր"
+        />
         <button class="send__btn" type="submit">Ուղարկել</button>
-    </form>
-    <div class="header__div">
-        <p>{{ daily_word[0].book }}<span><br>
-            {{ daily_word[0].chapter }}
-        </span>
-        </p>
-    </div>
-</header>
-<main>
+      </form>
+    </header>
     <div class="wordDay">
-        <p><span></span>
-
-        </p>
+      <p>
+        {{ daily_word[0].book }}<span class="wordDay__span"
+          ><br />
+          {{ daily_word[0].chapter }} </span
+        >
+      </p>
     </div>
+    <main>
 
-    <div class="main__slider">
+      <div class="main__slider">
         <div class="sliderLeft"></div>
         <div class="sliderRight"></div>
         <div class="slider__div">
-<img class="slider__img" src="{{ url_for('static', filename='img/img1.jpg') }}" alt="img1">
-<img class="slider__img" src="{{ url_for('static', filename='img/img2.jpg') }}" alt="img2">
-<img class="slider__img" src="{{ url_for('static', filename='img/img3.jpg') }}" alt="img3">
-</div>
-    </div>
-</main>
-</body>
+          <img
+            class="slider__img"
+            src="{{ url_for('static', filename='img/img1.jpg') }}"
+            alt="img1"
+          />
+          <img
+            class="slider__img"
+            src="{{ url_for('static', filename='img/img2.jpg') }}"
+            alt="img2"
+          />
+          <img
+            class="slider__img"
+            src="{{ url_for('static', filename='img/img3.jpg') }}"
+            alt="img3"
+          />
+        </div>
+      </div>
+
+      <section class="interTopic">
+        <div class="main__topic">
+          <a class="topic__a" href="">Աստվածաշնչյան հարցեր ու պատասխաններ</a>
+        </div>
+
+        <div class="main__topic">
+          <a class="topic__a" href="">Խաղաղություն և երջանկություն</a>
+        </div>
+
+        <div class="main__topic">
+          <a class="topic__a" href="">Հավատ առ Աստված</a>
+        </div>
+        <div class="main__topic">
+          <a class="topic__a" href="">Ամուսնություն և ընտանիք</a>
+        </div>
+        <div class="main__topic">
+          <a class="topic__a" href="">Պատանիներ և երիտասարդներ</a>
+        </div>
+        <div class="main__topic">
+          <a class="topic__a" href="">Երեխաների համար</a>
+        </div>
+        <div class="main__topic">
+          <a class="topic__a" href="">Գիտություն և Աստվածաշունչ</a>
+        </div>
+        <div class="main__topic">
+          <a class="topic__a" href="">Գիտություն և Աստվածաշունչ</a>
+        </div>
+        <div class="main__topic">
+          <a class="topic__a" href="">Հաճախ տրվող հարցեր</a>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
