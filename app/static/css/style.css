@@ -29,7 +29,9 @@ nav {
   padding: 5px 30px;
   align-items: center;
   gap: 15px;
-  background-color: rgb(166, 164, 164);
+  /* background-color: rgb(166, 164, 164); */
+  background-color: rgb(250, 250, 250);
+  box-shadow: 1px 1px 10px 1px black;
 
 }
 .nav__title {
@@ -38,7 +40,8 @@ nav {
   gap: 20px;
 }
 h1 {
-  color: white;
+  /* color: white; */
+  color: #000000;
 }
 
 .nav__ul {
@@ -49,7 +52,8 @@ h1 {
 }
 .nav__a {
   text-decoration: none;
-  color: white;
+  /* color: white; */
+  color: #000000; 
 }
 
 header {
@@ -160,12 +164,12 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px;
   width: 76%;
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.63);
+  background-color: rgba(255, 255, 255, 0.693);
  
 }
 
@@ -374,4 +378,99 @@ justify-content: space-evenly;
 .prgevner__link:hover{
   text-decoration: 1.5px solid underline #7a7aeb;
   text-underline-offset: 3px;
+}
+.sermon__sec{
+    display: flex;
+  flex-direction: column;
+  padding-inline: 10px;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.sermon__div{
+   display: flex;
+justify-content: space-evenly;
+}
+
+.sermon__link{
+    text-decoration: none;
+  font-size: 19px;
+  max-width: 250px;
+  color: #7a7aeb;
+
+}
+.sermon__link:hover{
+    text-decoration: 1.5px solid underline #7a7aeb;
+  text-underline-offset: 3px;
+}
+
+
+.sermon{
+    display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.sermon__span{
+   color: #5959d1;
+ font-weight: 600;
+}
+
+footer{
+  width: 100%;
+  height: 40vh;
+  display: flex;
+justify-content: space-between;
+padding: 30px 40px;
+background: #000000;  
+background: -webkit-linear-gradient(to right, #434343, #000000); 
+background: linear-gradient(to right, #434343, #000000); 
+
+
+}
+
+.footer__title{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.footer__links{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+
+.links__icons{
+  width: 27px;
+  height: 27px;
+}
+.footer__h2{
+  color: white;
+  font-size: 26px;
+}
+address{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.address__h3{
+  color: white;
+  font-size: 23px;
+}
+.address{
+  color: white;
+}
+.footer__left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.links__icons:nth-of-type(3){
+width: 32px;
+height: 35px;
+object-fit: cover;
 }
