@@ -5,6 +5,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.root{
+  width: 100%;
+  height: fit-content;
+  background-image: url("https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg?size=626&ext=jpg&ga=GA1.1.44546679.1716595200&semt=sph");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .churchImg {
   width: 50px;
   height: 50px;
@@ -21,35 +30,7 @@ nav {
   align-items: center;
   gap: 15px;
   background-color: rgb(166, 164, 164);
-  /* background: rgb(255, 193, 32);
-  background: -moz-linear-gradient(
-    6deg,
-    rgba(255, 193, 32, 1) 0%,
-    rgba(208, 217, 87, 1) 31%,
-    rgba(138, 215, 147, 1) 57%,
-    rgba(79, 213, 189, 1) 79%,
-    rgba(23, 211, 230, 1) 100%,
-    rgba(217, 217, 217, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    6deg,
-    rgba(255, 193, 32, 1) 0%,
-    rgba(208, 217, 87, 1) 31%,
-    rgba(138, 215, 147, 1) 57%,
-    rgba(79, 213, 189, 1) 79%,
-    rgba(23, 211, 230, 1) 100%,
-    rgba(217, 217, 217, 1) 100%
-  );
-  background: linear-gradient(
-    6deg,
-    rgba(255, 193, 32, 1) 0%,
-    rgba(208, 217, 87, 1) 31%,
-    rgba(138, 215, 147, 1) 57%,
-    rgba(79, 213, 189, 1) 79%,
-    rgba(23, 211, 230, 1) 100%,
-    rgba(217, 217, 217, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc120",endColorstr="#d9d9d9",GradientType=1); */
+
 }
 .nav__title {
   display: flex;
@@ -96,7 +77,6 @@ header {
   color: black;
 }
 
-
 .send__btn {
   width: 100px;
   height: 45px;
@@ -109,7 +89,6 @@ header {
   background-color: rgba(75, 75, 235, 0.548);
   color: white;
 }
-
 
 .wordDay {
   display: flex;
@@ -129,28 +108,26 @@ header {
     rgba(180, 206, 232, 1) 98%
   ); */
 }
-.wordDay p{
-
+.wordDay p {
   max-width: 80%;
-/* text-align: center; */
-color: black;
-
+  /* text-align: center; */
+  color: black;
 }
 
-.wordDay span{
+.wordDay span {
   display: inline-block;
-
 }
 
 .slider__img {
-  width: 600px;
+  display: block;
+  width: 80vw;
   height: 100%;
   transition: 300ms linear;
 }
 
 .main__slider {
-  width: 600px;
-  height: 300px;
+  width: 100%;
+  height: 320px;
   overflow: hidden;
   margin: 20px auto;
   position: relative;
@@ -158,7 +135,7 @@ color: black;
 .slider__div {
   width: max-content;
   display: flex;
-  height: 300px;
+  height: 320px;
 }
 .sliderLeft,
 .sliderRight {
@@ -180,17 +157,22 @@ color: black;
 .sliderRight:hover {
   background-color: rgba(167, 167, 167, 0.553);
 }
-main{
-  border: 2px solid black;
-  box-shadow: 1px 1px 10px 1px gray;
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 76%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.63);
+ 
 }
-
-
 
 .main__topic:nth-of-type(1) {
   display: flex;
   flex-direction: column;
-  justify-content: end; 
+  justify-content: end;
   padding: 15px;
   width: 320px;
   height: 110px;
@@ -199,9 +181,9 @@ main{
   background-position: center;
 }
 .main__topic:nth-of-type(2) {
-    display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: end; 
+  justify-content: end;
   padding: 15px;
   width: 320px;
   height: 110px;
@@ -210,9 +192,9 @@ main{
   background-position: center;
 }
 .main__topic:nth-of-type(3) {
-    display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: end; 
+  justify-content: end;
   padding: 15px;
   width: 320px;
   height: 110px;
@@ -221,9 +203,9 @@ main{
   background-position: center;
 }
 .main__topic:nth-of-type(4) {
-    display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: end; 
+  justify-content: end;
   padding: 15px;
   width: 320px;
   height: 110px;
@@ -232,9 +214,9 @@ main{
   background-position: center;
 }
 .main__topic:nth-of-type(5) {
-    display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: end; 
+  justify-content: end;
   padding: 15px;
   width: 320px;
   height: 110px;
@@ -243,9 +225,9 @@ main{
   background-position: center;
 }
 .main__topic:nth-of-type(6) {
-    display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: end; 
+  justify-content: end;
   padding: 15px;
   width: 320px;
   height: 110px;
@@ -254,9 +236,9 @@ main{
   background-position: center;
 }
 .main__topic:nth-of-type(7) {
-    display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: end; 
+  justify-content: end;
   padding: 15px;
   width: 320px;
   height: 110px;
@@ -265,9 +247,9 @@ main{
   background-position: center;
 }
 .main__topic:nth-of-type(8) {
-    display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: end; 
+  justify-content: end;
   padding: 15px;
   width: 320px;
   height: 110px;
@@ -277,25 +259,28 @@ main{
 }
 
 .main__topic:nth-of-type(9) {
-    display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: end; 
+  justify-content: end;
   padding: 15px;
-   width: 320px;
+  width: 320px;
   height: 110px;
   background-image: url("../img/questions.jpg");
   background-size: cover;
   background-position: center;
 }
 .interTopic {
+  width: 100%;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  justify-content: space-between;
+  /* gap: 30px; */
+  row-gap: 20px;
   flex-wrap: wrap;
   margin-top: 50px;
 }
 
-.topic__a{
+.topic__a {
   display: inline-block;
   text-decoration: none;
   line-height: 25px;
@@ -303,3 +288,90 @@ main{
   font-size: 17px;
 }
 
+.HolyBible{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+/* width: 80%; */
+height: 250px;
+background-image: url("https://avatars.mds.yandex.net/i?id=49fc135883ad3de4ce546aee7f5dbeed57264ec3-5315583-images-thumbs&n=13");
+background-repeat: no-repeat;
+background-size: cover;
+animation: anim 1000ms linear;
+animation-timeline: view();
+animation-range-start: entry;
+animation-range-end: exit;
+}
+.bible__btn{
+  width: 200px;
+padding: 5px;
+color: white;
+font-weight: 600;
+  border-radius: 10px;
+  border: none;
+cursor: pointer;
+background-color: #2c3e50de; 
+
+}
+@keyframes anim {
+  0%{
+    width: 20%;
+  }
+  100%{
+width: 80%;
+  }
+
+
+
+}
+.bible__btn:hover{
+  transition: 200ms linear;
+scale: 1.1;
+}
+
+
+.pargevner__img{
+  width: 270px;
+  height: 150px;
+}
+
+.pargevner__sec{
+  display: flex;
+  flex-direction: column;
+  padding-inline: 10px;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.pargevner__div{
+  display: flex;
+justify-content: space-evenly;
+}
+.pargevner{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.seeMore__div{
+  text-align: end;
+  padding-right: 30px;
+}
+.seeMore{
+  color: #7a7aeb;
+  padding: 5px;
+  text-decoration: none;
+}
+.seeMore:hover{
+  background-color: rgba(122, 122, 235, 0.153);
+}
+.prgevner__link{
+  text-decoration: none;
+  font-size: 20px;
+  max-width: 250px;
+  color: #7a7aeb;
+}
+.prgevner__link:hover{
+  text-decoration: 1.5px solid underline #7a7aeb;
+  text-underline-offset: 3px;
+}

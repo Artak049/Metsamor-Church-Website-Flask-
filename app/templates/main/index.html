@@ -6,108 +6,142 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/app/static/css/style.css">
-    <!-- <link
+    <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css')}}"
-    /> -->
+    />
     <script
       src="{{ url_for('static', filename='js/script.js') }}"
       defer
     ></script>
   </head>
   <body>
-    <nav>
-      <div class="nav__title">
-        <img
-          class="churchImg"
-          src="https://yt3.googleusercontent.com/ytc/AIdro_n7nWhPVFB6h7pPd9sbSP65HR79ruSTcZv-XooT2mI--Gc=s160-c-k-c0x00ffffff-no-rj"
-          alt="Metsamor Img"
-        />
-        <h1>Մեծամորի Եկեղեցի</h1>
-      </div>
+    <div class="root">
+      <nav>
+        <div class="nav__title">
+          <img
+            class="churchImg"
+            src="https://yt3.googleusercontent.com/ytc/AIdro_n7nWhPVFB6h7pPd9sbSP65HR79ruSTcZv-XooT2mI--Gc=s160-c-k-c0x00ffffff-no-rj"
+            alt="Metsamor Img"
+          />
+          <h1>Մեծամորի Եկեղեցի</h1>
+        </div>
 
-      <ul class="nav__ul">
-        <li class="nav__li"><a class="nav__a" href="">Մեր մասին</a></li>
-        <li class="nav__li"><a class="nav__a" href="">Հոգևոր ֆիլմեր</a></li>
-        <li class="nav__li"><a class="nav__a" href="">Հոգևոր երգեր</a></li>
-        <li class="nav__li"><a class="nav__a" href="">Աստվածաշունչ</a></li>
-      </ul>
-    </nav>
-    <header>
-      <form class="header__form" action="">
-        <input
-          class="textInput"
-          type="text"
-          name="text"
-          placeholder="Տրված հարցեր"
-        />
-        <button class="send__btn" type="submit">Ուղարկել</button>
-      </form>
-    </header>
-    <div class="wordDay">
-      <p>
-        {{ daily_word[0].book }}<span class="wordDay__span"
-          ><br />
-          {{ daily_word[0].chapter }} </span
-        >
-      </p>
+        <ul class="nav__ul">
+          <li class="nav__li"><a class="nav__a" href="">Մեր մասին</a></li>
+          <li class="nav__li"><a class="nav__a" href="">Հոգևոր ֆիլմեր</a></li>
+          <li class="nav__li"><a class="nav__a" href="">Հոգևոր երգեր</a></li>
+        </ul>
+      </nav>
+      <header>
+        <form class="header__form" action="">
+          <input
+            class="textInput"
+            type="text"
+            name="text"
+            placeholder="Տրված հարցեր"
+          />
+          <button class="send__btn" type="submit">Ուղարկել</button>
+        </form>
+      </header>
+      <div class="wordDay">
+        <p>
+          {{ daily_word[0].book }}<span class="wordDay__span"
+            ><br />
+            {{ daily_word[0].chapter }}
+          </span>
+        </p>
+      </div>
+      <main>
+        <div class="main__slider">
+          <div class="sliderLeft"></div>
+          <div class="sliderRight"></div>
+          <div class="slider__div">
+            <img
+              class="slider__img"
+              src="{{ url_for('static', filename='img/img1.jpg') }}"
+              alt="img1"
+            />
+            <img
+              class="slider__img"
+              src="{{ url_for('static', filename='img/img2.jpg') }}"
+              alt="img2"
+            />
+            <img
+              class="slider__img"
+              src="{{ url_for('static', filename='img/img3.jpg') }}"
+              alt="img3"
+            />
+          </div>
+        </div>
+
+        <section class="interTopic">
+          <div class="main__topic">
+            <a class="topic__a" href="">Աստվածաշնչյան հարցեր ու պատասխաններ</a>
+          </div>
+
+          <div class="main__topic">
+            <a class="topic__a" href="">Խաղաղություն և երջանկություն</a>
+          </div>
+
+          <div class="main__topic">
+            <a class="topic__a" href="">Հավատ առ Աստված</a>
+          </div>
+          <div class="main__topic">
+            <a class="topic__a" href="">Ամուսնություն և ընտանիք</a>
+          </div>
+          <div class="main__topic">
+            <a class="topic__a" href="">Պատանիներ և երիտասարդներ</a>
+          </div>
+          <div class="main__topic">
+            <a class="topic__a" href="">Երեխաների համար</a>
+          </div>
+          <div class="main__topic">
+            <a class="topic__a" href="">Գիտություն և Աստվածաշունչ</a>
+          </div>
+          <div class="main__topic">
+            <a class="topic__a" href="">Գիտություն և Աստվածաշունչ</a>
+          </div>
+          <div class="main__topic">
+            <a class="topic__a" href="">Հաճախ տրվող հարցեր</a>
+          </div>
+        </section>
+
+<div class="HolyBible">
+<button class="bible__btn">Կարդալ Աստվածաշնչյանը օնլայն</button>
+</div>
+
+
+<section class="pargevner__sec">
+<h2 style="margin-left: 20px;">Սուրբ Հոգու պարգևներ</h2>
+<hr>
+
+<div class="seeMore__div">
+  <a class="seeMore" href="">Տեսնել ավելին</a>
+</div>
+
+<div class="pargevner__div">
+  <div class="pargevner">
+<a class="pargevner__a" href=""><img class="pargevner__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbfeg1VQksd95ELvEmQBeA_b0n4qgd2rLOMQ&s" alt=""></a>
+<a class="prgevner__link" href="">Սուրբ Հոգու մկրտության պարգև</a>
+</div >
+
+<div  class="pargevner">
+<a class="pargevner__a" href=""><img class="pargevner__img" src="https://www.churchofjesuschrist.org/imgs/6f605cb7007e82aee64fd20516f66abdf9e16d9a/full/1280%2C/0/default" alt=""></a>
+<a class="prgevner__link" href="">Ձեռնադրության պարգև</a>
+</div>
+
+<div  class="pargevner">
+<a class="pargevner__a" href=""><img class="pargevner__img" src="https://media.licdn.com/dms/image/C4E12AQEdZOVBsu5lPg/article-cover_image-shrink_600_2000/0/1520114192258?e=2147483647&v=beta&t=eaBwCdil7hUfWQmKYMjefNGNqAHolq6u4PyWkeJ5J7s" alt=""></a>
+<a class="prgevner__link" href="">Գիտության պարգև</a>
+</div>
+</div>
+
+
+</section>
+
+
+      </main>
     </div>
-    <main>
-
-      <div class="main__slider">
-        <div class="sliderLeft"></div>
-        <div class="sliderRight"></div>
-        <div class="slider__div">
-          <img
-            class="slider__img"
-            src="{{ url_for('static', filename='img/img1.jpg') }}"
-            alt="img1"
-          />
-          <img
-            class="slider__img"
-            src="{{ url_for('static', filename='img/img2.jpg') }}"
-            alt="img2"
-          />
-          <img
-            class="slider__img"
-            src="{{ url_for('static', filename='img/img3.jpg') }}"
-            alt="img3"
-          />
-        </div>
-      </div>
-
-      <section class="interTopic">
-        <div class="main__topic">
-          <a class="topic__a" href="">Աստվածաշնչյան հարցեր ու պատասխաններ</a>
-        </div>
-
-        <div class="main__topic">
-          <a class="topic__a" href="">Խաղաղություն և երջանկություն</a>
-        </div>
-
-        <div class="main__topic">
-          <a class="topic__a" href="">Հավատ առ Աստված</a>
-        </div>
-        <div class="main__topic">
-          <a class="topic__a" href="">Ամուսնություն և ընտանիք</a>
-        </div>
-        <div class="main__topic">
-          <a class="topic__a" href="">Պատանիներ և երիտասարդներ</a>
-        </div>
-        <div class="main__topic">
-          <a class="topic__a" href="">Երեխաների համար</a>
-        </div>
-        <div class="main__topic">
-          <a class="topic__a" href="">Գիտություն և Աստվածաշունչ</a>
-        </div>
-        <div class="main__topic">
-          <a class="topic__a" href="">Գիտություն և Աստվածաշունչ</a>
-        </div>
-        <div class="main__topic">
-          <a class="topic__a" href="">Հաճախ տրվող հարցեր</a>
-        </div>
-      </section>
-    </main>
   </body>
 </html>
