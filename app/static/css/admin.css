@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 nav{
+    background: rgb(186,186,186);
+    background: -moz-radial-gradient(circle, rgba(186,186,186,0.8631827731092436) 0%, rgba(68,68,68,0.8519782913165266) 100%);
+    background: -webkit-radial-gradient(circle, rgba(186,186,186,0.8631827731092436) 0%, rgba(68,68,68,0.8519782913165266) 100%);
+    background: radial-gradient(circle, rgba(186,186,186,0.8631827731092436) 0%, rgba(68,68,68,0.8519782913165266) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bababa",endColorstr="#444444",GradientType=1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    z-index: 2;
+    }
+.nav__title{
     background: rgb(34,193,195);
     background: -moz-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
@@ -15,16 +28,33 @@ nav{
     width: 100%;
     padding: 20px;
     z-index: 2;
-    }
-.nav__title{
     align-items: center;
     flex-direction: column;
     display: flex;
     gap: 20px;
 }
+.nav__ul{
+    display: flex;
+    gap: 15px;
+    /*text-align: right;*/
+    font-size: 18px;
+    color: whitesmoke;
+    list-style-type: none;
+
+}
+.nav__a{
+    display: inline-block;
+    text-decoration: none;
+    line-height: 25px;
+    color: whitesmoke;
+    font-size: 17px;
+}
+.nav__div{
+    /*border: solid 3px black;*/
+}
 .churchImg {
     border-radius: 50%;
-    width: 25%;
+    width: 35%;
 }
 form{
     background: rgb(63,94,251);
@@ -43,6 +73,7 @@ form{
     cursor: pointer;
 }
 input[type='text']{
+    font-size: 16px;
     border-radius: 5px;
     height: 40px;
     width: 500px;
