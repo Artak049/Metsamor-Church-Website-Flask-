@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background: rgb(34,193,195);
+    background: -moz-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#fdbb2d",GradientType=1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    z-index: 2;
+    }
+.nav__title{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
+.churchImg {
+    border-radius: 50%;
+    width: 25%;
+}
+form{
+    background: rgb(63,94,251);
+    background: -moz-radial-gradient(circle, rgba(63,94,251,0.6530987394957983) 0%, rgba(252,70,107,0.36738445378151263) 100%);
+    background: -webkit-radial-gradient(circle, rgba(63,94,251,0.6530987394957983) 0%, rgba(252,70,107,0.36738445378151263) 100%);
+    background: radial-gradient(circle, rgba(63,94,251,0.6530987394957983) 0%, rgba(252,70,107,0.36738445378151263) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endColorstr="#fc466b",GradientType=1);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 3px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type='text']{
+    border-radius: 5px;
+    height: 40px;
+    width: 500px;
+}
+input[type='submit']{
+    color: lightgray;
+    border-radius: 5px;
+    width: 60px;
+    height: 20px;
+}
+input[type="submit"]:hover {
+            background-color: darkgray;
+        }

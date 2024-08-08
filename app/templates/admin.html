@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css')}}">
+
 </head>
 <body>
-<link rel="stylesheet" href="./css/style.css">
     <nav>
-
-              <img src="https://yt3.googleusercontent.com/ytc/AIdro_n7nWhPVFB6h7pPd9sbSP65HR79ruSTcZv-XooT2mI--Gc=s160-c-k-c0x00ffffff-no-rj" alt="Metsamor Church">
-
-        <form method="post">
-<input type="text" name="book" id="book" placeholder="Book">
-<input type="text" name="chapter" id="chapter" placeholder="Chapter">
-<input type="submit" value="Send">
-        </form>
+        <div class="nav__title">
+            <img class="churchImg" src="https://yt3.googleusercontent.com/ytc/AIdro_n7nWhPVFB6h7pPd9sbSP65HR79ruSTcZv-XooT2mI--Gc=s160-c-k-c0x00ffffff-no-rj" alt="Metsamor Church">
+            <form method="post">
+                <input type="text" name="text" id="text">
+                <input type="submit" value="Send">
+            </form>
+        </div>
     </nav>
 
 
