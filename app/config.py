@@ -3,7 +3,7 @@ import os
 
 class Config(object):
     USER = os.environ.get('MYSQL_USER', 'root')
-    PASSWORD = os.environ.get('MYSQL_PASSWORD', '')
+    PASSWORD = os.environ.get('MYSQL_PASSWORD', 'NewMe2024')
     HOST = os.environ.get('MYSQL_HOST', 'localhost')
     PORT = os.environ.get('MYSQL_PORT', '3306')
     DATABASE = os.environ.get('MYSQL_DB', 'site')
