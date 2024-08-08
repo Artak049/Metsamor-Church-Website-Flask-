@@ -52,8 +52,13 @@ h1 {
 }
 .nav__a {
   text-decoration: none;
-  /* color: white; */
+padding: 8px;
   color: #000000; 
+}
+.nav__a:hover {
+  background-color: #948b8b;
+border-radius: 20px;
+  color:white; 
 }
 
 header {
@@ -303,7 +308,7 @@ background-image: url("https://avatars.mds.yandex.net/i?id=49fc135883ad3de4ce546
 background-repeat: no-repeat;
 background-size: cover;
 animation: anim 1000ms linear;
-animation-timeline: view;
+animation-timeline: view();
 animation-range-start: entry;
 animation-range-end: exit;
 }
