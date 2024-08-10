@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Հոգևոր ֆիլմեր</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/movies.css')}}">
+    <script src="../static/js/moves.js" defer></script>
 </head>
 <body>
-    
-<div class="root">
-     <nav>
+  
+  <div class="root">
+  <nav>
         <div class="nav__title">
           <a href="main/index.html"><img
             class="churchImg"
@@ -24,9 +25,20 @@
           <li class="nav__li"><a class="nav__a" href="">Հոգևոր երգեր</a></li>
         </ul>
       </nav>
+     
+<header>
+
+  <form action="">
+    <input class="searchMoves" type="search" placeholder="Որոնել Ֆիլմը">
+    <button class="searchBtn" type="submit">Որոնել</button>
+  </form>
+</header>
+
 
 <main>
-  
+  <div class="moves__div">
+
+  </div>
 </main>
 
 

@@ -6,10 +6,12 @@
 
 .root{
   width: 100%;
-  height: 100vh;
-background: #232526;  
-background: -webkit-linear-gradient(to right, #414345, #232526); 
-background: linear-gradient(to right, #414345, #232526); 
+  height: fit-content;
+background: #000000;  
+background: -webkit-linear-gradient(to right, #434343, #000000);
+background: linear-gradient(to right, #434343, #000000); 
+
+padding-bottom: 20px;
 
 }
 
@@ -21,6 +23,7 @@ background: linear-gradient(to right, #414345, #232526);
 }
 nav {
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 2;
   display: flex;
@@ -38,7 +41,6 @@ nav {
   gap: 20px;
 }
 h1 {
-  /* color: white; */
   color: #000000;
 }
 
@@ -51,6 +53,7 @@ h1 {
 .nav__a {
   text-decoration: none;
 padding: 8px;
+
   color: #000000; 
 }
 
@@ -59,3 +62,70 @@ padding: 8px;
 border-radius: 20px;
   color:white; 
 }
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+}
+ form{
+  display: flex;
+  width: 60%;
+  gap: 20px;
+}
+
+.searchMoves{
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  padding: 20px;
+  border: none;
+}
+
+.searchBtn{
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+.searchBtn:hover{
+color: white;
+  background-color: rgba(75, 75, 235, 0.548);
+}
+
+.moves__div{
+  color: white;
+  margin: 10px;
+}
+.moves{
+width: 90%;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+margin: 0 auto;
+gap: 30px;
+}
+ .move{
+  display: flex;
+  flex-direction: column;
+ width: 250px;
+ height: 350px;
+ }
+
+.moveTitle{
+  height: 16%;
+  padding: 5px;
+
+}
+.move__a{
+  text-decoration: none;
+  color: white;
+}
+.move__a:hover{
+  text-decoration: 1px solid underline white;
+}
+
+
