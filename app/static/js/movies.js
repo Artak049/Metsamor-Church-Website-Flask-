@@ -1,50 +1,58 @@
-"use strict"
+/** @format */
+
+"use strict";
 
 const movesDiv = document.querySelector(".moves__div");
 
-
 const filmImg = [
   {
+    id: 1,
     name: "Պեղոսը Քրիստոսի Առաքյալը",
     link: "https://img.youtube.com/vi/TkVJ-wvS7rc/sddefault.jpg",
   },
 
   {
+    id: 2,
     name: "Հիսուս Քրիստոս",
     link: "https://img.youtube.com/vi/D675NAu3hmw/sddefault.jpg",
   },
 
   {
+    id: 3,
     name: "Եսթեր - ֆիլմ հայերեն թարգմանությամբ",
     link: "https://i3.ytimg.com/vi/U5fG_a1HXN0/hqdefault.jpg",
   },
 
   {
+    id: 4,
     name: "Սամսոն և Դալիլա - 1-ին մաս - ֆիլմ հայերեն թարգմանությամբ",
     link: "https://img.youtube.com/vi/TkVJ-wvS7rc/sddefault.jpg",
   },
 
   {
+    id: 5,
     name: "ՍՈՒՐԲ ԾՆՈՒՆԴ - ֆիլմ հայերեն թարգմանությամբ",
     link: "https://img.youtube.com/vi/mBr3inbd-oo/maxresdefault.jpg",
   },
 
   {
+    id: 6,
     name: "Հովհաննես Առաքյալ - Հայտնություն - ֆիլմ հայերեն թարգմանությամբ",
     link: "https://img.youtube.com/vi/Gh8JL2zepSw/maxresdefault.jpg",
   },
 
   {
+    id: 7,
     name: "Աստված չի մահացել (2014)",
     link: "https://img.youtube.com/vi/ouVvxTMuZ2A/maxresdefault.jpg",
   },
 
   {
+    id: 8,
     name: "Դամասկոս - ֆիլմ հայերեն թարգմանությամբ",
     link: "https://img.youtube.com/vi/TkVJ-wvS7rc/sddefault.jpg",
   },
 ];
-
 
 const filmArr = [
   {
@@ -95,19 +103,18 @@ const filmArr = [
   },
 ];
 
-
 const moves = () => {
-    return `
+  return `
     <div class="moves">
     ${filmImg
       .map((obj) => {
         return `
-          <div class="move">
-          <a href=""><img class="moveImg" src=${obj.link} alt=""></a>
+          <div id=${obj.id} class="move">
+          <a href="http://127.0.0.1:5500/app/templates/movies2.html"><img class="moveImg" src=${obj.link} alt=""></a>
           
   
           <div class="moveTitle">
-          <a class="move__a" href="">${obj.name}</a>
+          <a class="move__a" href="http://127.0.0.1:5500/app/templates/movies2.html">${obj.name}</a>
 
           </div>
           
@@ -120,7 +127,31 @@ const moves = () => {
     </div>
     
     `;
-    
-}
+};
 
-movesDiv.innerHTML = moves()
+movesDiv.innerHTML = moves();
+
+
+
+
+
+
+
+const move = document.querySelector(".move");
+
+
+move.addEventListener("click", (e) => {
+  
+  console.log(e.target)
+})
+
+
+
+
+
+
+
+
+
+
+
